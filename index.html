@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    
+    <section class="left-section">
+        <div id="left-cover" class="cover cover-hide">
+           <img src="education5.jpg" alt=""> 
+            <h1>Welcome !</h1>
+            <h3>Already have an account ?</h3>
+            <button type="button" class="switch-btn" onclick="location.reload()">LOG IN!</button>
+        </div>
+
+        
+        <div id="left-form" class="form fade-in-element">
+            <h1 style="color:whitesmoke;">Login</h1>
+            <form action="login.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="User Name" autocomplete="off">
+                <input type="password" name="user-pass" class="input-box" placeholder="Password" autocomplete="off">
+                <input type="submit" name="login-btn" class="btn" value="Login!">
+            </form>
+        </div>
+
+    </section>
+
+    <section class="right-section">
+        <div id="right-cover" class="cover fade-in-element">
+          <img src="education5.jpg" alt=""> 
+            <h1>Welcome !</h1>
+            <h3>Don't have an account ?</h3>
+            <button type="button" class="switch-btn" onclick="switchSignup()">SIGN UP!</button>
+        </div>
+        <div id="right-form" class="form form-hide">
+            <h1 style="color:whitesmoke;">Signup</h1>
+            <form action="signup.php" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="User Name" autocomplete="off">
+                <input type="email" name="user-email" class="input-box" placeholder="Email" autocomplete="off">
+                <input type="password" name="user-pass" class="input-box" placeholder="Password" autocomplete="off">
+                <input type="submit" name="signup-btn" class="btn" value="Signup!">
+            </form>
+        </div>
+    </section>
+</div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
